@@ -34,7 +34,7 @@ export const HeroSection = (): JSX.Element => {
                   {t("hero.subtitle")}
                 </p>
                 <OnScrollAnimation variant="fadeIn">
-                  <div className="flex mt-[23px] gap-5 flex-col items-center md:flex-row">
+                  <div className="flex mt-[23px] gap-5 flex-col justify-center items-center md:flex-row">
                     <img
                       className="w-[185px] h-[55px]"
                       alt="App Store"

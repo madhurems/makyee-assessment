@@ -4,7 +4,7 @@ A pixel-perfect, animated landing page built with **Vite + React**, styled with 
 
 ## 🔗 Live Demo
 
-[🔗 View Live on Vercel](https://makyee-assessment.vercel.app)
+[🔗 View Live on Vercel](https://makyee-assessment-green.vercel.app/)
 
 ---
 
@@ -82,8 +82,4 @@ yarn build
 
 ## 📄 License
 
-MIT © [Madhur](https://github.com/madhurems)
-
-```
-
-```
+[Madhur](https://github.com/madhurems)

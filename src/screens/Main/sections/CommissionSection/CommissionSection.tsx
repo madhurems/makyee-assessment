@@ -23,7 +23,7 @@ const CommissionSection = () => {
           <div className="absolute md:w-[812px] md:h-[796px] top-0 right-0 [background:radial-gradient(50%_50%_at_50%_50%,rgba(253,146,146,1)_0%,rgba(255,255,255,1)_100%)] opacity-20" />
 
           {/* Section Header */}
-          <div className="flex flex-col md:max-w-[656px] items-center gap-[15.5px] mx-auto text-center mb-16">
+          <div className="flex flex-col items-center gap-[15.5px] mx-auto text-center mb-16">
             <span className="font-semibold text-[#ea223c] text-base leading-6">
               Our newest, your highest
             </span>
@@ -60,9 +60,9 @@ const CommissionSection = () => {
                     <span className="font-medium tracking-[-0.40px]">
                       {t("buttons.learnMore")}
                     </span>
-                    <div className="absolute right-5 w-5 h-5">
+                    {/* <div className="absolute right-5 w-5 h-5">
                       <img className="w-5 h-5" alt="Arrow" src="/image-2.svg" />
-                    </div>
+                    </div> */}
                   </Button>
                 </div>
               </CardContent>
@@ -79,7 +79,7 @@ const CommissionSection = () => {
             <CardContent className="p-0 md:p-6">
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col gap-6">
-                  <h3 className="font-bold text-makyeetestframerwebsitebig-stone text-4xl tracking-[-0.72px] leading-[43.2px]">
+                  <h3 className=" font-bold text-makyeetestframerwebsitebig-stone text-4xl tracking-[-0.72px] leading-[43.2px]">
                     {t("commission.completion.title")}
                   </h3>
                   <p className="text-makyeetestframerwebsiteshuttle-gray text-[18px] leading-[27px]">

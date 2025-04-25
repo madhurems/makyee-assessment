@@ -100,15 +100,13 @@ const DifferencesSection = () => {
               </div>
 
               <h2 className="font-bold text-black text-xl md:text-[45.4px] text-center md:leading-[57.6px] mb-2">
-                Seamless, transparent property transactions
+                Seamless, transparent property transactions for a smarter real
+                estate experience
               </h2>
-              <p className="font-bold text-black text-xl md:text-[44.625px] text-center md:leading-[57.6px]">
-                for a smarter real estate experience
-              </p>
             </div>
 
             {/* Statistics */}
-            <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
               {statistics.map((stat, index) => (
                 <React.Fragment key={index}>
                   {index > 0 && (

@@ -13,11 +13,11 @@ export const HeroSection = (): JSX.Element => {
       </div>
 
       {/* Hero Main Content */}
-      <div className="relative w-full bg-contain bg-no-repeat bg-right  container md:h-[742px] mx-auto flex items-center">
+      <div className="relative w-full bg-contain bg-no-repeat bg-right container md:h-[742px] mx-auto flex items-center">
         <div className="relative ">
           <div className="relative">
             {/* Hero Header */}
-            <div className="flex flex-col md:flex-row items-center justify-between text-center">
+            <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-start">
               <div className="w-full md:w-[696px]">
                 <Badge className="inline-flex items-center px-3.5 py-2 bg-white rounded-[100px] overflow-hidden backdrop-blur-[3px] border border-solid border-[#ea223c]">
                   <span className="font-medium text-black text-base text-center whitespace-nowrap">
@@ -34,16 +34,16 @@ export const HeroSection = (): JSX.Element => {
                   {t("hero.subtitle")}
                 </p>
                 <OnScrollAnimation variant="fadeIn">
-                  <div className="flex mt-[23px] gap-5 flex-col justify-center items-center md:flex-row">
+                  <div className=" md:flex-row md:justify-start md:items-start flex mt-[23px] gap-5 flex-col items-center justify-center">
                     <img
-                      className="w-[185px] h-[55px]"
+                      className="w-[185px]"
                       alt="App Store"
-                      src="/svg-682879982-18174.svg"
+                      src="/download-on-the-app-store-apple-logo-svgrepo-com-cropped.svg"
                     />
                     <img
-                      className="w-[185px] h-[55px]"
+                      className="w-[185px]"
                       alt="Google Play"
-                      src="/clip-path-group.png"
+                      src="/google-play-badge-logo-svgrepo-com-cropped.svg"
                     />
                   </div>
                 </OnScrollAnimation>

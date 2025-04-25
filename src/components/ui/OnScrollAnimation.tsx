@@ -56,7 +56,7 @@ export default function OnScrollAnimation({
   variant = "fadeIn",
 }: FadeInOnScrollProps) {
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { margin: "0px 0px -100px 0px" });
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -200px 0px" });
   const motionVariant = variantsMap[variant];
 
   return (

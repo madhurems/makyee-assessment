@@ -98,18 +98,20 @@ const CommissionSection = () => {
                     becomes effortless.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row items-center gap-5 mt-4">
-                  <img
-                    className="w-[185px] h-[55px]"
-                    alt="App Store"
-                    src="/svg-682879982-18174.svg"
-                  />
-                  <img
-                    className="w-[185px] h-[55px]"
-                    alt="Google Play"
-                    src="/clip-path-group-2.png"
-                  />
-                </div>
+                <OnScrollAnimation variant="fadeIn">
+                  <div className="flex flex-col md:flex-row items-center gap-5 mt-4">
+                    <img
+                      className="w-[185px]"
+                      alt="App Store"
+                      src="/download-on-the-app-store-apple-logo-svgrepo-com-cropped.svg"
+                    />
+                    <img
+                      className="w-[185px]"
+                      alt="Google Play"
+                      src="/google-play-badge-logo-svgrepo-com-cropped.svg"
+                    />
+                  </div>
+                </OnScrollAnimation>
               </div>
             </CardContent>
           </Card>

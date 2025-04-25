@@ -1,15 +1,17 @@
 import { MailIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../../../components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export const FooterSection = (): JSX.Element => {
+  const { t } = useTranslation();
   // Navigation links data
   const navLinks = [
-    { title: "Benefits", href: "#" },
-    { title: "Features", href: "#" },
-    { title: "Testimonials", href: "#" },
-    { title: "FAQ's", href: "#" },
-    { title: "Contact us", href: "#" },
+    { title: t("nav.benefits"), href: "#" },
+    { title: t("nav.features"), href: "#" },
+    { title: t("nav.testimonials"), href: "#" },
+    { title: t("nav.faqs"), href: "#" },
+    { title: t("nav.contact"), href: "#" },
   ];
 
   // Social media icons data
@@ -52,7 +54,7 @@ export const FooterSection = (): JSX.Element => {
         </div>
 
         {/* Navigation links */}
-        <nav className="flex flex-col md:flex-row justify-center items-center gap-4 mt-16">
+        <nav className="flex flex-col md:flex-row justify-center items-center gap-4 my-16">
           {navLinks.map((link, index) => (
             <React.Fragment key={link.title}>
               <a
@@ -68,8 +70,10 @@ export const FooterSection = (): JSX.Element => {
           ))}
         </nav>
 
+        <div className="w-full h-[1px] bg-black my-8_" />
+
         {/* Footer bottom section */}
-        <div className="mt-20 pt-12 border-t border-[#1d1d20]">
+        <div className="py-10 m-0 border-t border-[#1d1d20]">
           <div className="flex flex-col md:flex-row  justify-between items-center">
             <div className="[font-family:'Instrument_Sans',Helvetica] font-medium text-makyeetestframerwebsitemanatee text-[17px] leading-[25.5px]">
               Design by π

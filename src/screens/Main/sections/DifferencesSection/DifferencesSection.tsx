@@ -3,6 +3,7 @@ import { Card, CardContent } from "../../../../components/ui/card";
 import { useTranslation } from "react-i18next";
 import { Separator } from "../../../../components/ui/separator";
 import AnimatedCounter from "../../../../components/AnimatedCounter";
+import BrandMarquee from "./BrandMarquee";
 
 const DifferencesSection = () => {
   const { t } = useTranslation();
@@ -66,15 +67,21 @@ const DifferencesSection = () => {
 
           {/* Featured Section */}
           <Card className="w-full md:max-w-[820px] mx-auto bg-transparent">
-            <CardContent className="flex flex-col items-center gap-[30px] pt-[60px] pb-[50px] [background:radial-gradient(50%_50%_at_50%_0%,rgba(242,242,242,1)_0%,rgba(255,255,255,1)_100%)]">
+            <CardContent
+              className="flex flex-col items-center gap-[30px] pt-[60px] pb-[50px] w-full h-full max-w-full max-h-full items-center m-0 p-0 list-none opacity-100 overflow-hidden"
+              style={{
+                maskImage:
+                  "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)",
+                WebkitMaskImage:
+                  "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)",
+              }}
+            >
               <span className="font-medium text-[#131315] text-center">
                 We were featured in
               </span>
-              <img
-                className="max-w-full md:h-[42px]"
-                alt="Featured partners"
-                src="/section-mask-group.svg"
-              />
+
+              <BrandMarquee />
+
               <div className="w-full h-px [background:radial-gradient(50%_50%_at_50%_50%,rgba(255,255,255,1)_0%,rgba(227,227,227,1)_100%)] absolute top-0 left-0" />
             </CardContent>
           </Card>
